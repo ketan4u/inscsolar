@@ -1,0 +1,699 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(90deg, #00796b, #009688);
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Menu */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b;
+}
+
+/* Logo and Company Name */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    border-radius: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.company-name {
+    font-size: 1.3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    padding-right: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('solar.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 500px;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.hero-content h2 {
+    font-size: 2.3em;
+    margin-top: 100px;
+/*    margin-bottom: 20px;*/
+}
+
+.highlight {
+    
+    font-size: 1.3em; /* Slightly larger for emphasis */
+    font-weight: 700; /* Bold for impact */
+    color: #9df9ef; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.btn {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.about  {
+    padding: 40px 0;
+}
+
+.about h2{
+    text-align: center;
+    font-size: 2.5em;
+    color: #004d40;
+}
+
+.aboutHighlight {
+    font-family: 'Merriweather', serif; /* Professional and hopeful font */
+    font-size: 1.1em; /* Slightly larger for emphasis */
+    font-weight: 800; /* Bold for impact */
+    color: #00796b;
+}
+
+.about p {
+    font-size: 1 em; /* Slightly larger for emphasis */
+
+}
+
+.about h3 {
+    font-size: 1.4em;
+    font-weight: 800;
+    color: #00796b;
+}
+
+.services {
+/*    background: linear-gradient(135deg, #e0f7fa, #80deea); /* Light blue gradient */
+    background-color: #e8f5e9; /* Light green background */
+    padding: 40px 0;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #004d40;
+
+}
+
+.service-info a {
+    text-decoration: none;
+    color: #004d40; /* Professional teal */
+}
+
+.service-info a:hover {
+    color: #00796b;
+}
+
+.services .service {
+    font-size: 1.2em;
+    color: #004d40; /* Darker color for text inside service blocks */
+}
+
+.service-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 300px;
+    object-fit: cover;
+    padding-left: 40px 0;
+}
+
+.service-info {
+    max-width: 1000px;
+    padding-left: 20px;
+}
+
+.service-info h3 {
+    font-size: 1.5em;
+    color: #00796b; /* Dark teal for header */
+    margin-bottom: 10px;
+}
+
+.service-info p {
+    font-size: 1.0em;
+    color: #555;
+    line-height: 1.5;
+}
+
+/*.service-info img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 300px;
+    object-fit: cover;
+    padding-left: 40px 0;
+}*/
+
+/* Projects Section */
+.projects {
+    padding: 40px 0;
+    background: #e8f5e9; /* Light green background */
+}
+
+
+.project-list {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden; /* Prevents vertical scrolling */
+    gap: 20px; /* Adds space between items */
+    padding-bottom: 10px; /* Space below the content for better visuals */
+    scroll-behavior: smooth; /* Smooth scrolling for all browsers */
+
+    /* Ensure flex items don't break */
+    white-space: nowrap; /* Prevents items from wrapping to the next line */
+    width: 100%; /* Ensures full container width */
+}
+
+
+.project img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+    /* Hide Scrollbar (Optional, keeps scrolling functional) */
+.project-list::-webkit-scrollbar {
+    height: 8px; /* Horizontal scrollbar height */
+}
+
+.project-list::-webkit-scrollbar-thumb {
+    background: #00796b; /* Teal scrollbar */
+    border-radius: 4px;
+}
+
+.project-list::-webkit-scrollbar-thumb:hover {
+    background: #004d40; /* Darker teal on hover */
+}
+
+.project-list {
+    scroll-snap-type: x mandatory; /* Ensures cards snap into place */
+}
+
+.project {
+    scroll-snap-align: start; /* Each card aligns to the start of the scroll container */
+}
+
+
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 40px 20px;
+    font-size: 2.5em;
+    color: #004d40; /* Professional teal */
+}
+
+
+.project {
+    flex: 0 0 auto; /* Prevents shrinking or growing of the card */
+    width: 300px; /* Fixed width for consistency */
+    background: #f8f9fa; /* Light grey background for the card */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    padding: 20px; /* Space inside the card */
+    text-align: center;
+    overflow: hidden; /* Ensures no content overflows the card */
+    display: flex;
+    flex-direction: column; /* Ensures proper layout for image and text */
+    justify-content: space-between; /* Ensures spacing between image and text */
+}
+
+
+.project p {
+    font-size: 1em; /* Adjusts text size */
+    color: #555; /* Neutral text color */
+    line-height: 1.4; /* Adds spacing between lines */
+    overflow: hidden; /* Ensures no text overflow */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limits to 2 lines */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis; /* Adds '...' if text overflows */
+    white-space: wrap; /* Allows text to wrap */
+    margin: 0; /* Removes unnecessary margin */
+}
+
+
+.projectHighlight {
+    font-size: 1.2em;
+    color: #00796b; /* Professional teal color */
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.enquiry {
+    background: #f8f9fa;
+    height: auto;
+}
+
+.enquiry h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 40px 20px; /* Adds space around the section */
+    font-size: 2.5em;
+    color: #004d40; /* Professional teal */
+}
+
+/* Buttons */
+.cta {
+    margin-top: 10px;
+    padding: 12px 25px;
+    background: #ffeb3b;
+    color: #007bff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.cta:hover {
+    background: #007bff;
+    color: #ffeb3b;
+    box-shadow: 0 4px 10px rgba(255, 235, 59, 0.5);
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.social-media {
+    background: #e8f5e9; 
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #004d40; /* Professional teal */
+}
+
+.social-media p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.instagram-link {
+    font-size: 1.1em;
+    color: #e4405f; /* Instagram brand color */
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #e4405f;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.instagram-link:hover {
+    background: #e4405f;
+    color: #fff;
+}
+
+.solar-systems {
+    background: #fff; /* Clean white background */
+    padding: 60px 20px;
+}
+
+.solar-systems h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #004d40; /* Dark teal */
+}
+
+.solar-types {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.solar-type {
+    flex: 1 1 calc(50% - 20px); /* Two columns for larger screens */
+    background: #f8f9fa; /* Light gray background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.solar-type h3 {
+    font-size: 1.8em;
+    color: #00796b; /* Dark teal for title */
+    margin-bottom: 10px;
+}
+
+.solar-type p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.address {
+    background-color: #f0f4f8; /* Light gray background */
+    padding: 40px 20px;
+    text-align: center;
+    color: #333; /* Neutral text color */
+}
+
+.address h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #004d40; /* Dark teal for the header */
+}
+
+.address p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #555; /* Slightly darker text for readability */
+}
+
+.address-details p {
+    margin: 10px 0;
+}
+
+
+/* Why Solar Section */
+.why-solar {
+    background-color: #e8f5e9; /* Light green background */
+    padding: 60px 20px;
+}
+
+.why-solar h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #004d40; /* Dark teal */
+}
+
+.why-solar .intro {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.benefit {
+    flex: 1 1 calc(50% - 20px); /* Two columns on larger screens */
+    background: #f8f9fa; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.benefit h3 {
+    font-size: 1.8em;
+    color: #00796b; /* Professional teal */
+    margin-bottom: 10px;
+}
+
+.benefit ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.benefit ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.benefit ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #00796b;
+    font-weight: bold;
+}
+
+/* Blogs Section */
+.blogs {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+}
+
+.blogs h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #004d40;
+}
+
+.blogs p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog-item {
+    flex: 0 1 calc(33.33% - 20px);
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.blog-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #00796b;
+}
+
+.blog-item p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.blog-item .read-more {
+    font-size: 1em;
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #00796b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.blog-item .read-more:hover {
+    background: #00796b;
+    color: #fff;
+}
+
+/* For enquiry form*/
+
+.enquiry-form {
+  margin: 3rem auto; /* Center the form section */
+  max-width: 1200px; /* Restrict maximum width */
+  padding: 2rem;
+  background-color: #f8f9fa; /* Light background to blend with the theme */
+  border-radius: 8px; /* Smooth corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+.enquiry-form h2 {
+  text-align: center;
+    margin-bottom: 10px;
+    padding: 20px 20px; /* Adds space around the section */
+    font-size: 2.5em;
+    color: #004d40; /* Professional teal */
+}
+
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible grid layout */
+  gap: 1.5rem; /* Spacing between items */
+}
+
+form select,
+form input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #2c3e50;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form select:focus,
+form input:focus {
+  outline: none;
+  border-color: #3498db; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Glow effect on focus */
+}
+
+.submit-btn {
+  margin: 1rem auto;
+  display: block;
+  width: 60%;
+  max-width: 300px;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e4405f; /* Match button color to your theme */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #c0392b; /* Slightly darker shade on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+}
+
+.submit-btn:active {
+  background-color: #a93226; /* Even darker for active click */
+}
+
+@media screen and (max-width: 768px) {
+  .submit-btn {
+    width: 80%; /* Wider button for smaller screens */
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+  }
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .solar-type {
+        flex: 1 1 100%; /* Stacks items vertically on smaller screens */
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+
+    .logo-container {
+        justify-content: center;
+    }
+
+    .projects {        
+        padding: 10px;
+    }
+
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-image img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .service-info {
+        padding-left: 0;
+    }
+
+    .enquiry {
+        flex-direction: column;
+    }
+
+    .benefit {
+        flex: 1 1 100%; /* Stacks items vertically on smaller screens */
+    }
+
+}
+
+
+ /*#ffb300; /* Golden yellow */
+
+ /*font-family: 'Merriweather', serif; /* Professional and hopeful font */
